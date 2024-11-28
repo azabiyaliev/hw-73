@@ -15,7 +15,7 @@ app.get('/:echo', (req, res) => {
 })
 
 app.get(`/encode/:encode` , (req, res) => {
-    return res.send(Vigenere.Cipher(password).crypt(req.params.code));
+    return res.send(Vigenere.Cipher(password).crypt(req.params.encode));
 })
 
 app.get(`/decode/:decode`, (req, res) => {
